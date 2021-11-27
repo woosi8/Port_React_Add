@@ -1,0 +1,13 @@
+FROM node:alpine AS builder
+
+WORKDIR /app
+
+COPY package.json yarn.lock ./
+
+RUN cd /app
+
+RUN yarn install --pure-lockfile
+
+COPY . .
+
+CMD ["yarn", "run", "start"]

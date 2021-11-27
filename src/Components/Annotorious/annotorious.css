@@ -1,0 +1,68 @@
+.container > div {
+	/* width: 80%; */
+	/* height: 80vh; */
+	/* margin: 0 auto; */
+	/* display: block; */
+}
+
+.img {
+	/* margin: 0 auto; */
+	/* width: 100%; */
+	width: 100%;
+	height: 100%;
+}
+
+/* Tag 박스 크기 */
+.r6o-editor {
+	width: 324px;
+}
+
+/* Tag 위치  */
+.r6o-autocomplete ul {
+	top: -44px;
+	left: 0;
+}
+.r6o-editor {
+	margin-left: 30px;
+}
+/* @media (max-width: 800px) {
+	.img {
+		width: 407px;
+	}
+} */
+/* Annotation 크기 : default 100% */
+.a9s-annotationlayer {
+	/* width: 80%; */
+	width: 100%;
+}
+
+.a9s-inner {
+	/* stroke: #fff000; */
+	stroke-width: 1px;
+	fill: transparent;
+}
+
+.a9s-inner:hover {
+	stroke: #003cff;
+}
+
+/* Tagging 할 때 컬러 */
+.a9s-selection.improved-polygon .a9s-inner,
+.a9s-annotation.improved-polygon.editable .a9s-inner {
+	stroke: #fff000 !important;
+}
+
+/* Tag Label Color */
+
+.porosity .a9s-inner {
+	stroke: red;
+}
+.crack .a9s-inner {
+	stroke: dodgerblue;
+}
+.spatter .a9s-inner {
+	stroke: green;
+}
+.bead .a9s-inner {
+	stroke: #ff9100;
+}

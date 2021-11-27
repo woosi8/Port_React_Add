@@ -1,0 +1,21 @@
+.report_container {
+	/* padding: 10px; */
+}
+.boxes {
+	height: 100%;
+	border: 1px solid #000;
+	align-items: unset;
+}
+.boxes div {
+	padding: 5px;
+	width: 50%;
+}
+
+.boxes div:first-child {
+	border-right: 1px solid #000;
+	background-color: #f2f2f2;
+}
+
+.boxes div:nth-child(2) {
+	width: 100%;
+}
