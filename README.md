@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 #### 이미지 태그하는 방법 (다각형, 사각형, 원)을 선택하여 원하는 이미지 위치에 표시하고 완료와 동시에 선택 가능한 라벨을 띄어주어 선택하여 완성 되도록 수정. 라벨 선택에 따른 각 다른 색상을 가지도록 하는 기능 추가함.
 
 ## - MyAccount 회원 상태 수정 컴포넌트
+#### 회원의 정보를 uuid별로 get하여 update 가능하도록 하는 화면 
 ## - Img-Loading 이미지 로딩 컴포넌트
-
+#### 이미지를 불러오고 불러오는 중에 Loading 화면을 띄어줌. (검사기능은 프론트 화면에서만 구현됨)
 
