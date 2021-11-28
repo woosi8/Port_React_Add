@@ -1,6 +1,4 @@
-# FrontEnd Proejct
-
-With Material Design
+# FrontEnd Proejct With Material Design
 
 ## - Team 생성 컴포넌트
 #### 플러스 아이콘을 클릭하여 모달창을 띄어 새로 생성할 팀 정보를 입력하여 팀을 생성.(CRUD 가능하도록 구성 *CRUD CODE 버튼 클릭시 소스코드로 이동 가능) 
