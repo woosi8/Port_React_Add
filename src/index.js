@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// build 깃허브 주소 에러되는거 떄문에 HashRouter 로 변경
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import history from "./history";
