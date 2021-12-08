@@ -23,7 +23,8 @@ import {
 	Users as UsersIcon,
 } from "react-feather";
 import NavItem from "./NavItem";
-import img from "../../Assets/Images/corplogo.png";
+// import img from "../../Assets/Images/rsc.png";
+import img from "Assets/Images/rsc.png";
 import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 import ImageIcon from "@mui/icons-material/Image";
 import ArchiveIcon from "@mui/icons-material/Archive";
