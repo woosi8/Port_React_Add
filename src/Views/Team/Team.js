@@ -7,7 +7,7 @@ import TeamModal from "../../Components/Team/TeamModal";
 import { Cards } from "../../Components/Team/Cards";
 import Button from "@mui/material/Button";
 
-import axios from "axios";
+// import axios from "axios";
 import { Container } from "@mui/material";
 import Link from "@mui/material/Link";
 // import Cards from "../../Components/Team/Cards";

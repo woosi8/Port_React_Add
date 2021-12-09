@@ -5,8 +5,6 @@ import { styled } from "@mui/styles";
 
 import { CssBaseline } from "@mui/material";
 import DashboardHeader from "../Header/DashboardHeader";
-import Grid from "@mui/material/Grid";
-// import { makeStyles } from "@mui/styles";
 import { useState } from "react";
 import DashboardSidebar from "../Sidebar/Sidebar";
 const DashboardLayoutRoot = styled("div")(({ theme }) => ({

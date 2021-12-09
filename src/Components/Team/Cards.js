@@ -5,29 +5,21 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import FormButton from "../Custom/FormButton";
-import { Button } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
-import { TextField } from "@mui/material";
-import { Box } from "@mui/system";
-import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
-import EditIcon from "@mui/icons-material/Edit";
-import SaveIcon from "@mui/icons-material/Save";
 import { useState } from "react";
-import { Grid } from "@mui/material";
+
 const GroupHeader = styled(CardHeader)(({ theme }) => ({
 	backgroundColor: theme.palette.primary.light,
 	color: "#fff",
 }));
 
-const GroupBox = styled(Card)(({ theme }) => ({
-	borderRadius: 3,
-	maxWidth: 345,
-	// margin: theme.spacing(1),
-	margin: "0 auto",
-	marginBottom: "20px",
-}));
+// const GroupBox = styled(Card)(({ theme }) => ({
+// 	borderRadius: 3,
+// 	maxWidth: 345,
+// 	// margin: theme.spacing(1),
+// 	margin: "0 auto",
+// 	marginBottom: "20px",
+// }));
 
 const deleteCard = (id) => {
 	axios

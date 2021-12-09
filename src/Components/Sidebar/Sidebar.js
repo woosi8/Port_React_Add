@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
 	Avatar,
@@ -11,13 +10,12 @@ import {
 	Typography,
 } from "@mui/material";
 import TableRowsIcon from "@mui/icons-material/TableRows";
-import ListAltIcon from "@mui/icons-material/ListAlt";
 import {
 	AlertCircle as AlertCircleIcon,
-	BarChart as BarChartIcon,
-	Lock as LockIcon,
-	Settings as SettingsIcon,
-	ShoppingBag as ShoppingBagIcon,
+	// BarChart as BarChartIcon,
+	// Lock as LockIcon,
+	// Settings as SettingsIcon,
+	// ShoppingBag as ShoppingBagIcon,
 	User as UserIcon,
 	UserPlus as UserPlusIcon,
 	Users as UsersIcon,
@@ -30,6 +28,8 @@ import ImageIcon from "@mui/icons-material/Image";
 import ArchiveIcon from "@mui/icons-material/Archive";
 import RecentActorsIcon from "@mui/icons-material/RecentActors";
 import CreateIcon from "@mui/icons-material/Create";
+import EastIcon from "@mui/icons-material/East";
+
 const user = {
 	avatar: img,
 	jobTitle: "Junior Developer",
@@ -62,7 +62,16 @@ const items = [
 		icon: ImageIcon,
 		title: "Img-Loading",
 	},
-
+	// {
+	// 	href: "/imgupload",
+	// 	icon: ImageIcon,
+	// 	title: "Img-Upload",
+	// },
+	{
+		href: "/imgSteps",
+		icon: EastIcon,
+		title: "Img-Upload-Steps",
+	},
 	{
 		href: "/team_maker",
 		icon: UsersIcon,

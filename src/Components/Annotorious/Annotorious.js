@@ -21,9 +21,9 @@ function Anno() {
 
 	const [alignment, setAlignment] = useState("poly");
 
-	const getContextSource = () => {
-		return ["Select a category", "Car", "Bus", "autorickshaw", "Bike"];
-	};
+	// const getContextSource = () => {
+	// 	return ["Select a category", "Car", "Bus", "autorickshaw", "Bike"];
+	// };
 	// Init Annotorious when the component
 	// mounts, and keep the current 'anno'
 	// instance in the application state

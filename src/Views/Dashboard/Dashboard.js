@@ -1,5 +1,5 @@
 import MyButton from "../../Components/Custom/MyButton";
-import MyModal from "../../Components/Custom/MyModal";
+// import MyModal from "../../Components/Custom/MyModal";
 // import MySelect from "../../Components/Custom/MySelect";
 import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles((theme) => ({
@@ -25,7 +25,6 @@ const Dashboard = ({ history }) => {
 				Go to Contact Page
 			</button>
 			<div className={classes.divide}>
-
 				<MyButton />
 				{/* <MySelect /> */}
 				{/* <CustomerLists /> */}

@@ -1,14 +1,13 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
 import { Form, useForm } from "../Custom/UserForm";
 import Input from "../Custom/Input";
 import FormButton from "../Custom/FormButton";
 
-import corplogo from "../../Assets/Images/corplogo.png";
-import reactIcon from "../../Assets/Images/react-blue.png";
+// import corplogo from "../../Assets/Images/corplogo.png";
+// import reactIcon from "../../Assets/Images/react-blue.png";
 // import corplogo from '../../Assets/Images/corplogo.png'
 import AppleIcon from "@mui/icons-material/Apple";
 

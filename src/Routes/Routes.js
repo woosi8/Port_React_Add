@@ -13,6 +13,11 @@ import AllUsers from "../Views/Team/AllUsers";
 import Loading from "../Views/Loading/Loading";
 import DragDrop from "../Views/DragNDrop/DragandDrop";
 import Annotorious from "../Views/Annotorious/Annotorious";
+import Imgupload from "Views/ImgUpload/Imgupload";
+import Imgupload2 from "Views/ImgUpload/Imgupload2";
+import Imgupload3 from "Views/ImgUpload/Imgupload3";
+import Imgupload4 from "Views/ImgUpload/Imgupload4";
+import ImgSteps from "Views/ImgUpload/ImgStep";
 export const MainRoute = [
 	{
 		id: "login",
@@ -115,6 +120,41 @@ export const ChildRoute = [
 		id: "Annotorious",
 		component: Annotorious,
 		path: "/annotorious",
+		korean: "사용자들",
+		exact: true,
+	},
+	{
+		id: "Imgupload",
+		component: Imgupload,
+		path: "/imgupload",
+		korean: "사용자들",
+		exact: true,
+	},
+	{
+		id: "Imgupload2",
+		component: Imgupload2,
+		path: "/imgupload_step2",
+		korean: "사용자들",
+		exact: true,
+	},
+	{
+		id: "Imgupload3",
+		component: Imgupload3,
+		path: "/imgupload_step3",
+		korean: "사용자들",
+		exact: true,
+	},
+	{
+		id: "Imgupload4",
+		component: Imgupload4,
+		path: "/imgupload_step4",
+		korean: "사용자들",
+		exact: true,
+	},
+	{
+		id: "ImgSteps",
+		component: ImgSteps,
+		path: "/imgSteps",
 		korean: "사용자들",
 		exact: true,
 	},
