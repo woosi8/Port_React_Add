@@ -82,31 +82,31 @@ const MultiImg3 = () => {
 				<Box sx={{ flexGrow: 1 }}>
 					<Grid container spacing={2} columns={16}>
 						<Grid item xs={8}>
-							<StyledTypo variant="h6" color="primary">
+							<StyledTypo variant="h5" color="primary">
 								0°
 							</StyledTypo>
 							<StyledBox component="img" src={weld} alt="용접사진" />
 						</Grid>
 						<Grid item xs={8}>
-							<StyledTypo variant="h6" color="primary">
+							<StyledTypo variant="h5" color="primary">
 								90°
 							</StyledTypo>
 							<StyledBox component="img" src={weld1} alt="용접사진" />
 						</Grid>
 						<Grid item xs={8}>
-							<StyledTypo variant="h6" color="primary">
+							<StyledTypo variant="h5" color="primary">
 								180°
 							</StyledTypo>
 							<StyledBox component="img" src={weld2} alt="용접사진" />
 						</Grid>
 						<Grid item xs={8}>
-							<StyledTypo variant="h6" color="primary">
+							<StyledTypo variant="h5" color="primary">
 								270°
 							</StyledTypo>
 							<StyledBox component="img" src={weld2} alt="용접사진" />
 						</Grid>
 						<Grid item xs={8}>
-							<StyledTypo variant="h6" color="secondary">
+							<StyledTypo variant="h5" color="error">
 								비표
 							</StyledTypo>
 							<StyledBox component="img" src={weld} alt="비표사진" />
