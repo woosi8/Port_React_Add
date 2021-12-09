@@ -10,6 +10,9 @@ import InputIcon from "@mui/icons-material/Input";
 // import Logo from "./Logo";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import HomeIcon from "@mui/icons-material/Home";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Link from "@mui/material/Link";
+
 const DashboardHeader = ({ props, onMobileNavOpen, ...rest }) => {
 	const [notifications] = useState([]);
 
@@ -22,6 +25,9 @@ const DashboardHeader = ({ props, onMobileNavOpen, ...rest }) => {
 					sx={{ cursor: "pointer" }}
 				>
 					<HomeIcon />
+					<Link href="https://github.com/woosi8/Port_React_Add" target="_blank">
+						<GitHubIcon sx={{ marginLeft: "20px", color: "white" }} />
+					</Link>
 				</Badge>
 				<Box sx={{ flexGrow: 1 }} />
 				<Hidden lgDown>
