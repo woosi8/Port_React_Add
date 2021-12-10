@@ -149,13 +149,8 @@ export default function PlusForm() {
 									// className="flex-container"
 									className={classes.btnbox}
 								>
-									<Paper
-										className={classes.btnpaper}
-										// className="p-x-1 m-x-1 big-font"
-										square
-									>
-										{totalNum}
-									</Paper>
+									{totalNum}
+
 									<Box>
 										<Button
 											data-testid="incrementAway"
@@ -203,9 +198,7 @@ export default function PlusForm() {
 									채용예정인원
 								</Typography>
 								<Box className={classes.btnbox}>
-									<Paper className={classes.btnpaper} square>
-										{recruitment}
-									</Paper>
+									{recruitment}
 									<Box>
 										<Button
 											data-testid="incrementAway"

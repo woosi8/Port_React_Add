@@ -29,6 +29,7 @@ import ArchiveIcon from "@mui/icons-material/Archive";
 import RecentActorsIcon from "@mui/icons-material/RecentActors";
 import CreateIcon from "@mui/icons-material/Create";
 import EastIcon from "@mui/icons-material/East";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 
 const user = {
 	avatar: img,
@@ -72,6 +73,12 @@ const items = [
 		icon: EastIcon,
 		title: "Img-Upload-Steps",
 	},
+	{
+		href: "/plusForm",
+		icon: AddCircleIcon,
+		title: "PlusForm",
+	},
+
 	{
 		href: "/team_maker",
 		icon: UsersIcon,
