@@ -19,6 +19,7 @@ import Imgupload3 from "Views/ImgUpload/Imgupload3";
 import Imgupload4 from "Views/ImgUpload/Imgupload4";
 import ImgSteps from "Views/ImgUpload/ImgStep";
 import PlusForm from "Views/PlusForm/PlusForm";
+import MapTouchs from "Views/MapTouchs/MapTouchs";
 export const MainRoute = [
 	{
 		id: "login",
@@ -163,6 +164,13 @@ export const ChildRoute = [
 		id: "PlusForm",
 		component: PlusForm,
 		path: "/plusForm",
+		korean: "사용자들",
+		exact: true,
+	},
+	{
+		id: "MapTouchs",
+		component: MapTouchs,
+		path: "/maptouchs",
 		korean: "사용자들",
 		exact: true,
 	},
