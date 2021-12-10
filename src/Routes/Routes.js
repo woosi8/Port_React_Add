@@ -18,6 +18,7 @@ import Imgupload2 from "Views/ImgUpload/Imgupload2";
 import Imgupload3 from "Views/ImgUpload/Imgupload3";
 import Imgupload4 from "Views/ImgUpload/Imgupload4";
 import ImgSteps from "Views/ImgUpload/ImgStep";
+import PlusForm from "Views/PlusForm/PlusForm";
 export const MainRoute = [
 	{
 		id: "login",
@@ -155,6 +156,13 @@ export const ChildRoute = [
 		id: "ImgSteps",
 		component: ImgSteps,
 		path: "/imgSteps",
+		korean: "사용자들",
+		exact: true,
+	},
+	{
+		id: "PlusForm",
+		component: PlusForm,
+		path: "/plusForm",
 		korean: "사용자들",
 		exact: true,
 	},
