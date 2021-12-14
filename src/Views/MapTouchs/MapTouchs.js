@@ -81,7 +81,7 @@ const MapTouchs = () => {
 						style={{ gridArea: "a1", textAlign: "center" }}
 						className={classes.subtitle}
 					>
-						Risk
+						Title
 					</Typography>
 					<Typography
 						component={"span"}
@@ -98,7 +98,7 @@ const MapTouchs = () => {
 							}}
 							className={classes.thirdtitle}
 						>
-							심각성
+							정도
 						</span>
 						<MapTouch
 						// formats={formats}
@@ -110,7 +110,7 @@ const MapTouchs = () => {
 							}}
 							className={classes.thirdtitle}
 						>
-							빈도
+							차이
 						</span>
 					</Typography>
 
@@ -119,8 +119,7 @@ const MapTouchs = () => {
 						style={{ gridArea: "b1", textAlign: "center" }}
 						className={classes.subtitle}
 					>
-						CPMS <br />
-						부적합코드
+						셀랙트
 					</Typography>
 					<Typography
 						component={"span"}
