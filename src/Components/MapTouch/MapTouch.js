@@ -173,27 +173,6 @@ export default function MapTouch({}) {
 					className={classes.yellow}
 				></StyledToggleButton>
 			</StyledToggleButtonGroup>
-
-			<ToggleButtonGroup
-				value={formats}
-				onChange={handleFormat}
-				aria-label="text formatting"
-			>
-				<Grid container spacing={2} columns={16}>
-					<Grid item xs={4}>
-						<ToggleButton value="bold" aria-label="bold"></ToggleButton>
-					</Grid>
-					<Grid item xs={4}>
-						<ToggleButton value="bold" aria-label="bold"></ToggleButton>
-					</Grid>
-					<Grid item xs={4}>
-						<ToggleButton value="bold" aria-label="bold"></ToggleButton>
-					</Grid>
-					<Grid item xs={4}>
-						<ToggleButton value="bold" aria-label="bold"></ToggleButton>
-					</Grid>
-				</Grid>
-			</ToggleButtonGroup>
 		</div>
 	);
 }
