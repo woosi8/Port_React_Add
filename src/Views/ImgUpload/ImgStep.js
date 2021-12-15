@@ -108,6 +108,10 @@ const ImgSteps = () => {
 	const handleReset = () => {
 		setActiveStep(0);
 	};
+
+	const handleStep = (step) => () => {
+		setActiveStep(step);
+	};
 	return (
 		<Container maxWidth="xl">
 			{/* <Breadcrumb
@@ -129,7 +133,7 @@ const ImgSteps = () => {
 								stepProps.completed = false;
 							}
 							return (
-								<Step key={label} {...stepProps}>
+								<Step key={label} onClick={handleStep(index)} {...stepProps}>
 									<StepLabel {...labelProps}>{label}</StepLabel>
 								</Step>
 							);
