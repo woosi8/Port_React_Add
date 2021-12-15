@@ -41,10 +41,10 @@ function Anno() {
 					{
 						widget: "TAG",
 						vocabulary: [
-							{ label: "Porosity" },
-							{ label: "Crack" },
-							{ label: "Spatter" },
-							{ label: "Bead" },
+							{ label: "Red" },
+							{ label: "Blue" },
+							{ label: "Green" },
+							{ label: "Orange" },
 						],
 					},
 				],
@@ -68,7 +68,7 @@ function Anno() {
 					body: [
 						{
 							type: "TextualBody",
-							value: "Porosity",
+							value: "Red",
 							purpose: "tagging",
 						},
 					],

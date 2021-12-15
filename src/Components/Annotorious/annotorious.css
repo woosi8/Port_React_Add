@@ -54,15 +54,15 @@
 
 /* Tag Label Color */
 
-.porosity .a9s-inner {
+.red .a9s-inner {
 	stroke: red;
 }
-.crack .a9s-inner {
+.blue .a9s-inner {
 	stroke: dodgerblue;
 }
-.spatter .a9s-inner {
+.green .a9s-inner {
 	stroke: green;
 }
-.bead .a9s-inner {
+.orange .a9s-inner {
 	stroke: #ff9100;
 }
