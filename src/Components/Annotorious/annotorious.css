@@ -66,3 +66,8 @@
 .orange .a9s-inner {
 	stroke: #ff9100;
 }
+
+.a9s-annotation.long {
+	stroke-width: 4;
+	stroke: black;
+}

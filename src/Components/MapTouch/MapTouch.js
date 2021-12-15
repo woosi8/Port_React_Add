@@ -6,6 +6,9 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Grid from "@mui/material/Grid";
 
 const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
+	"&.MuiToggleButtonGroup-root": {
+		display: "block",
+	},
 	"& .MuiToggleButtonGroup-grouped": {
 		borderRadius: 0,
 		border: "1px solid black",
@@ -37,7 +40,7 @@ const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
 
 const useStyles = makeStyles((theme) => ({
 	mainToggle: {
-		display: "block",
+		// display: "block !important",
 		width: "100%",
 		margin: "0",
 		borderRadius: "0",
@@ -72,10 +75,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MapTouch({}) {
 	const classes = useStyles();
-	const [formats, setFormats] = React.useState(() => ["bold", "italic"]);
+	const [formats, setFormats] = React.useState(() => []);
 
 	const handleFormat = (event, newFormats) => {
 		setFormats(newFormats);
+		console.log(formats);
 	};
 
 	return (
@@ -90,9 +94,6 @@ export default function MapTouch({}) {
 					name="risk"
 					value="1"
 					className={classes.yellow}
-					sx={{
-						background: "pink",
-					}}
 				></StyledToggleButton>
 				<StyledToggleButton
 					name="risk"
@@ -113,9 +114,11 @@ export default function MapTouch({}) {
 					name="risk"
 					value="5"
 					className={classes.green}
-					sx={{
-						background: "linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%)",
-					}}
+					sx={
+						{
+							// background: "linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%)",
+						}
+					}
 				></StyledToggleButton>
 				<StyledToggleButton
 					name="risk"

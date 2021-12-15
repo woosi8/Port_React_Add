@@ -30,6 +30,7 @@ import RecentActorsIcon from "@mui/icons-material/RecentActors";
 import CreateIcon from "@mui/icons-material/Create";
 import EastIcon from "@mui/icons-material/East";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
+import AppsIcon from "@mui/icons-material/Apps";
 
 const user = {
 	avatar: img,
@@ -80,7 +81,7 @@ const items = [
 	},
 	{
 		href: "/maptouchs",
-		icon: AddCircleIcon,
+		icon: AppsIcon,
 		title: "MapTouchs",
 	},
 
