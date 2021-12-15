@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { Annotorious } from "@recogito/annotorious";
 // import { AnnoReact, AnnoImage } from "react-image-annotorious";
 import "@recogito/annotorious/dist/annotorious.min.css";
-import weld from "./weld.png";
 import cat from "Assets/Images/cat.jpg";
 import "./annotorious.css";
 import BetterPolygon from "@recogito/annotorious-better-polygon";
@@ -30,7 +29,7 @@ function Anno() {
 	// instance in the application state
 
 	var formatter = function (annotation) {
-		console.log(annotation.bodies);
+		// console.log(annotation.bodies);
 		var longComments = annotation.bodies.filter(function (body) {
 			var isComment =
 				body.type === "TextualBody" &&
@@ -145,7 +144,7 @@ function Anno() {
 			annotorious.on("changeSelectionTarget", function (target) {});
 			// Attach event handlers here
 			annotorious.on("createAnnotation", (annotation) => {
-				console.log(annotation);
+				// console.log(annotation);
 			});
 
 			annotorious.on("updateAnnotation", (annotation, previous) => {});
@@ -175,6 +174,7 @@ function Anno() {
 	const circleTool = () => {
 		setTool("circle");
 		anno.setDrawingTool("circle");
+		// console.log(tool);
 	};
 	const handleChange = (event, newAlignment) => {
 		setAlignment(newAlignment);

@@ -48,12 +48,12 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const emails = ["username@gmail.com", "user02@gmail.com"];
+// const emails = ["username@gmail.com", "user02@gmail.com"];
 
 const TeamCreate = (props) => {
 	const classes = useStyles();
 	const [open, setOpen] = useState(false);
-	const [selectedValue, setSelectedValue] = useState(emails[1]);
+	// const [selectedValue, setSelectedValue] = useState(emails[1]);
 	const [values2, setValues2] = useState({ comment: "" });
 	const [counterMeasures, setCounterMeasures] = useState([]);
 

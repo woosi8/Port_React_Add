@@ -8,6 +8,7 @@ import {
 	Card,
 	Typography,
 	Alert,
+	styled,
 } from "@mui/material";
 import { Container } from "@mui/material";
 import { makeStyles } from "@mui/styles";
@@ -24,6 +25,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const steps = ["Step1", "Step2", "Step3", "Step4"];
+
+const StyledStep = styled(Step)(({ theme }) => ({
+	"&.MuiStep-root": { cursor: "pointer" },
+}));
+const StyledStepLabel = styled(StepLabel)(({ theme }) => ({
+	"&.MuiStepLabel-root": { cursor: "pointer" },
+	"&.Mui-disabled": {},
+}));
 
 const ImgSteps = () => {
 	const classes = useStyles();
@@ -133,9 +142,13 @@ const ImgSteps = () => {
 								stepProps.completed = false;
 							}
 							return (
-								<Step key={label} onClick={handleStep(index)} {...stepProps}>
-									<StepLabel {...labelProps}>{label}</StepLabel>
-								</Step>
+								<StyledStep
+									key={label}
+									onClick={handleStep(index)}
+									{...stepProps}
+								>
+									<StyledStepLabel {...labelProps}>{label}</StyledStepLabel>
+								</StyledStep>
 							);
 						})}
 					</Stepper>

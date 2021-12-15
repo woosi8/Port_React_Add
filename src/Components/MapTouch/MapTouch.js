@@ -3,7 +3,6 @@ import { makeStyles } from "@mui/styles";
 import { styled } from "@mui/material/styles";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import Grid from "@mui/material/Grid";
 
 const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
 	"&.MuiToggleButtonGroup-root": {
@@ -73,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 	toggles: { width: "23.3%", height: "5rem", border: "1px solid black" },
 }));
 
-export default function MapTouch({}) {
+export default function MapTouch() {
 	const classes = useStyles();
 	const [formats, setFormats] = React.useState(() => []);
 

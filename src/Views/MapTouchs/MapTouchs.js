@@ -3,11 +3,11 @@ import MapTouch from "Components/MapTouch/MapTouch";
 import { makeStyles } from "@mui/styles";
 
 import Typography from "@mui/material/Typography";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+// import MenuItem from "@mui/material/MenuItem";
+// import FormControl from "@mui/material/FormControl";
+// import Select from "@mui/material/Select";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+// import Grid from "@mui/material/Grid";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -114,7 +114,7 @@ const MapTouchs = () => {
 						</span>
 					</Typography>
 
-					<Typography
+					{/* <Typography
 						component={"span"}
 						style={{ gridArea: "b1", textAlign: "center" }}
 						className={classes.subtitle}
@@ -140,7 +140,7 @@ const MapTouchs = () => {
 								<MenuItem value="EZ030207">EZ030207</MenuItem>
 							</Select>
 						</FormControl>
-					</Typography>
+					</Typography> */}
 				</Box>
 			</Box>
 		</>

@@ -5,8 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import axios from "axios";
-import { useState } from "react";
+// import axios from "axios";
+// import { useState } from "react";
 
 const GroupHeader = styled(CardHeader)(({ theme }) => ({
 	backgroundColor: theme.palette.primary.light,
@@ -21,32 +21,32 @@ const GroupHeader = styled(CardHeader)(({ theme }) => ({
 // 	marginBottom: "20px",
 // }));
 
-const deleteCard = (id) => {
-	axios
-		.delete(`/delete_message/${id}`, {})
-		.then(function (response) {
-			console.log(response);
-			// setrow(response);
-		})
-		.catch(function (error) {
-			console.log(error);
-		});
-};
+// const deleteCard = (id) => {
+// 	axios
+// 		.delete(`/delete_message/${id}`, {})
+// 		.then(function (response) {
+// 			console.log(response);
+// 			// setrow(response);
+// 		})
+// 		.catch(function (error) {
+// 			console.log(error);
+// 		});
+// };
 
 export function Cards({ row }) {
-	const [editing, setEditing] = useState(false);
-	const [values, setValues] = useState([]);
+	// const [editing, setEditing] = useState(false);
+	// const [values, setValues] = useState([]);
 
-	const handleChange = (event) => {
-		setValues({
-			...values,
-			[event.target.name]: event.target.value,
-		});
-	};
+	// const handleChange = (event) => {
+	// 	setValues({
+	// 		...values,
+	// 		[event.target.name]: event.target.value,
+	// 	});
+	// };
 
-	const editOpen = () => {
-		setEditing(true);
-	};
+	// const editOpen = () => {
+	// 	setEditing(true);
+	// };
 	return (
 		<>
 			<Card sx={{ maxWidth: 345, minWidth: 300, borderRadius: 2 }}>

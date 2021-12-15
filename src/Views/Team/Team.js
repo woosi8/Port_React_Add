@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 const Team = ({ history }) => {
 	// const [toggleDrawer, setToggleDrawer] = useState(false);
 	const classes = useStyles();
-	const [open, setOpen] = useState(false);
+	// const [open, setOpen] = useState(false);
 	const data = [{ ID: null, groupname: "", projectname: "", projectgoal: "" }];
 
 	const [msg, setMsg] = useState([]);

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import {
 	Button,
 	TextField,
@@ -9,7 +9,6 @@ import {
 	Typography,
 	CssBaseline,
 	Box,
-	Paper,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 // import { Add, Remove } from "@material-ui/icons";
@@ -107,7 +106,7 @@ const mg = "김부장";
 
 export default function PlusForm() {
 	const classes = useStyles();
-	const history = useHistory();
+	// const history = useHistory();
 	const [totalNum, setTotalnum] = useState(33);
 	const [recruitment, setRecruitment] = useState(1);
 
