@@ -68,7 +68,7 @@ export default function ImageLoading(props) {
 
 		let fileReader = new FileReader();
 		fileReader.readAsDataURL(e.target.files[0]);
-		fileReader.onload = function(e) {
+		fileReader.onload = function (e) {
 			setImgSrc(e.target.result);
 		};
 
@@ -397,7 +397,7 @@ export default function ImageLoading(props) {
 							sx={{ height: "8vh", fontSize: "1.5rem" }}
 							startIcon={loading ? "" : <FactCheckIcon />}
 						>
-							{loading ? <CircularProgress color="inherit" /> : "외관 검사"}
+							{loading ? <CircularProgress color="inherit" /> : "이미지 검사"}
 						</Button>
 					</Stack>
 				</Box>
