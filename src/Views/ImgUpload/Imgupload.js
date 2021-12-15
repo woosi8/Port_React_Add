@@ -80,8 +80,7 @@ const Imgupload = () => {
 	return (
 		<Container>
 			<StyledTitle fontWeight={550} variant="subtitle1">
-				용접 작업이 완료된 사진과 비표를 업로드 해주세요. <br />
-				AT011021212 - 자동용접
+				사진을 업로드 해주세요 <br />
 			</StyledTitle>
 			<MultiImg />
 			<ImgBoard />

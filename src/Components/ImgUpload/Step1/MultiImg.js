@@ -16,6 +16,10 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import SwipeableViews from "react-swipeable-views";
 // import { autoPlay } from 'react-swipeable-views-utils';
 import ImgUpload from "./ImgUpload";
+import animal from "Assets/Images/animal.jpg";
+import elk from "Assets/Images/elk.jpg";
+import cat from "Assets/Images/cat.jpg";
+import squ from "Assets/Images/squireel.jpg";
 
 const StyledTitle = styled(Typography)(({ theme }) => ({
 	textAlign: "center",
@@ -69,7 +73,7 @@ const MultiImg = () => {
 	return (
 		<Box sx={{ width: "100%", typography: "body1" }}>
 			<Typography variant="h5" color="primary">
-				용접사진(4장)
+				사진(4장)
 			</Typography>
 
 			<Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -89,23 +93,23 @@ const MultiImg = () => {
 				// style={{ height: '50vh' }}
 			>
 				{imgFile ? (
-					<StyledBox component="img" src={weld} alt="용접사진" />
+					<StyledBox component="img" src={animal} alt="용접사진" />
 				) : (
 					<ImgUpload />
 				)}
 
 				{!imgFile ? (
-					<StyledBox component="img" src={weld1} alt="용접사진" />
+					<StyledBox component="img" src={cat} alt="용접사진" />
 				) : (
 					<ImgUpload />
 				)}
 				{imgFile ? (
-					<StyledBox component="img" src={weld2} alt="용접사진" />
+					<StyledBox component="img" src={elk} alt="용접사진" />
 				) : (
 					<ImgUpload />
 				)}
 				{!imgFile ? (
-					<StyledBox component="img" src={weld} alt="용접사진" />
+					<StyledBox component="img" src={animal} alt="용접사진" />
 				) : (
 					<ImgUpload />
 				)}

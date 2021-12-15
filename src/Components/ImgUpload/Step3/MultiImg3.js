@@ -4,12 +4,13 @@ import { useNavigate } from "react-router-dom";
 import { Box, styled, Typography, Grid, Paper, TextField } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import Container from "@mui/material/Container";
-import weld from "../weld.png";
-import weld1 from "../weld1.jpg";
-import weld2 from "../weld2.jpg";
 import WarningIcon from "@mui/icons-material/Warning";
 import ImgCheckList from "./ImgCheckList";
 // import { ReactModal } from './ReactModal';
+import animal from "Assets/Images/animal.jpg";
+import elk from "Assets/Images/elk.jpg";
+import cat from "Assets/Images/cat.jpg";
+import squ from "Assets/Images/squireel.jpg";
 
 const StyledTypo = styled(Typography)(({ theme }) => ({
 	textAlign: "center",
@@ -85,31 +86,31 @@ const MultiImg3 = () => {
 							<StyledTypo variant="h5" color="primary">
 								0°
 							</StyledTypo>
-							<StyledBox component="img" src={weld} alt="용접사진" />
+							<StyledBox component="img" src={squ} alt="용접사진" />
 						</Grid>
 						<Grid item xs={8}>
 							<StyledTypo variant="h5" color="primary">
 								90°
 							</StyledTypo>
-							<StyledBox component="img" src={weld1} alt="용접사진" />
+							<StyledBox component="img" src={cat} alt="용접사진" />
 						</Grid>
 						<Grid item xs={8}>
 							<StyledTypo variant="h5" color="primary">
 								180°
 							</StyledTypo>
-							<StyledBox component="img" src={weld2} alt="용접사진" />
+							<StyledBox component="img" src={animal} alt="용접사진" />
 						</Grid>
 						<Grid item xs={8}>
 							<StyledTypo variant="h5" color="primary">
 								270°
 							</StyledTypo>
-							<StyledBox component="img" src={weld2} alt="용접사진" />
+							<StyledBox component="img" src={elk} alt="용접사진" />
 						</Grid>
 						<Grid item xs={8}>
 							<StyledTypo variant="h5" color="error">
-								비표
+								특이사항
 							</StyledTypo>
-							<StyledBox component="img" src={weld} alt="비표사진" />
+							<StyledBox component="img" src={cat} alt="비표사진" />
 						</Grid>
 					</Grid>
 				</Box>
@@ -126,22 +127,22 @@ const MultiImg3 = () => {
 							업로드 전 사진 체크리스트
 						</StyledTypoBoder>
 						<Typography variant="body1">
-							잘못된 사진 업로드 시 기술인증이 취소될 수 있습니다. 반드시 사진을
+							잘못된 사진 업로드 시 문제가 발생할 수 있습니다. 반드시 사진을
 							확인해 주세요.
 						</Typography>
 					</Box>
 
 					<Typography variant="h10" sx={{ margin: "3vh 0" }}>
-						비표인식내용
+						이미지내용 (아래 표를 클릭 시 수정 가능합니다.)
 					</Typography>
 					<Typography variant="h5" sx={{ marginBottom: "3vh" }}>
-						AT01102121 -용접자2
+						ABCD124 -사용자
 					</Typography>
 				</Box>
 				<Container>
 					<Grid container spacing={2}>
 						<Grid item xs={6}>
-							도면/이용번호
+							사용자 번호
 						</Grid>
 						<Grid item xs={6}>
 							<StyledText
@@ -153,19 +154,19 @@ const MultiImg3 = () => {
 								name="drawing"
 								// onChange={handleChange}
 								// value={values.drawing}
-								defaultValue="DWG-001/01"
+								defaultValue="ABCD124"
 							/>
 						</Grid>
 					</Grid>
 
 					<Grid container spacing={2}>
 						<Grid item xs={6}>
-							배관관경
+							촬영장소
 						</Grid>
 						<Grid item xs={6}>
 							<StyledText
 								helperText=" "
-								defaultValue="CS/SS 200A"
+								defaultValue="Austria"
 								variant="standard"
 								size="small"
 								hiddenLabel
@@ -178,12 +179,12 @@ const MultiImg3 = () => {
 					</Grid>
 					<Grid container spacing={2}>
 						<Grid item xs={6}>
-							용접일자
+							촬영일자
 						</Grid>
 						<Grid item xs={6}>
 							<StyledText
 								helperText=" "
-								defaultValue="2021.11.10"
+								defaultValue="2021.10.12"
 								variant="standard"
 								size="small"
 								hiddenLabel
@@ -196,12 +197,12 @@ const MultiImg3 = () => {
 					</Grid>
 					<Grid container spacing={2}>
 						<Grid item xs={6}>
-							용접사명
+							사진사
 						</Grid>
 						<Grid item xs={6}>
 							<StyledText
 								helperText=" "
-								defaultValue="용접자2"
+								defaultValue="사진사1"
 								variant="standard"
 								size="small"
 								hiddenLabel

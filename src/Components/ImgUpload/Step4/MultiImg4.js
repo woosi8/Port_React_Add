@@ -13,9 +13,10 @@ import {
 } from "@mui/material";
 import TabPanel from "@mui/lab/TabPanel";
 import Container from "@mui/material/Container";
-import weld from "../weld.png";
-import weld1 from "../weld1.jpg";
-import weld2 from "../weld2.jpg";
+import animal from "Assets/Images/animal.jpg";
+import elk from "Assets/Images/elk.jpg";
+import cat from "Assets/Images/cat.jpg";
+import squ from "Assets/Images/squireel.jpg";
 
 const StyledTypo = styled(Typography)(({ theme }) => ({
 	textAlign: "center",
@@ -62,53 +63,53 @@ const MultiImg4 = () => {
 					color="primary"
 					sx={{ textAlign: "center", margin: "3vw 0" }}
 				>
-					AI 분석 결과
+					이미지 분석 결과
 				</Typography>
 				<Grid container spacing={2} columns={16}>
 					<Grid item xs={8}>
 						<StyledTypo variant="h5" color="primary">
 							0°
 						</StyledTypo>
-						<StyledBox component="img" src={weld} alt="용접사진" />
+						<StyledBox component="img" src={squ} alt="용접사진" />
 					</Grid>
 					<Grid item xs={8}>
 						<StyledTypo variant="h5" color="primary">
 							90°
 						</StyledTypo>
-						<StyledBox component="img" src={weld1} alt="용접사진" />
+						<StyledBox component="img" src={cat} alt="용접사진" />
 					</Grid>
 					<Grid item xs={8}>
 						<StyledTypo variant="h5" color="primary">
 							180°
 						</StyledTypo>
-						<StyledBox component="img" src={weld2} alt="용접사진" />
+						<StyledBox component="img" src={animal} alt="용접사진" />
 					</Grid>
 					<Grid item xs={8}>
 						<StyledTypo variant="h5" color="primary">
 							270°
 						</StyledTypo>
-						<StyledBox component="img" src={weld2} alt="용접사진" />
+						<StyledBox component="img" src={elk} alt="용접사진" />
 					</Grid>
 				</Grid>
 			</Box>
 			<Box sx={{ margin: "5vw 0 0 3vw" }}>
 				<Typography variant="h10" sx={{ margin: "3vw 0" }}>
-					비표인식내용
+					이미지내용
 				</Typography>
 				<Typography variant="h5" sx={{ marginBottom: "3vw" }}>
-					AT01102121 -용접자2
+					ABCD124 -사용자{" "}
 				</Typography>
 			</Box>
 			<Container>
 				<Grid container spacing={2}>
 					<Grid item xs={4}>
-						도면/이용번호
+						사용자 번호
 					</Grid>
 					<Grid item xs={8}>
 						<StyledText
 							helperText=" "
 							id="filled-hidden-label-small"
-							defaultValue="DWG-001/01"
+							defaultValue="ABCD124"
 							variant="standard"
 							size="small"
 							hiddenLabel
@@ -120,13 +121,13 @@ const MultiImg4 = () => {
 
 				<Grid container spacing={2}>
 					<Grid item xs={4}>
-						배관관경
+						촬영장소
 					</Grid>
 					<Grid item xs={8}>
 						<StyledText
 							helperText=" "
 							id="filled-hidden-label-small"
-							defaultValue="CS/SS 200A"
+							defaultValue="Austria"
 							variant="standard"
 							size="small"
 							hiddenLabel
@@ -137,13 +138,13 @@ const MultiImg4 = () => {
 				</Grid>
 				<Grid container spacing={2}>
 					<Grid item xs={4}>
-						용접일자
+						촬영일자
 					</Grid>
 					<Grid item xs={8}>
 						<StyledText
 							helperText=" "
 							id="filled-hidden-label-small"
-							defaultValue="2021.11.10"
+							defaultValue="2021.10.12"
 							variant="standard"
 							size="small"
 							hiddenLabel
@@ -154,13 +155,13 @@ const MultiImg4 = () => {
 				</Grid>
 				<Grid container spacing={2}>
 					<Grid item xs={4}>
-						용접사명
+						사진사
 					</Grid>
 					<Grid item xs={8}>
 						<StyledText
 							helperText=" "
 							id="filled-hidden-label-small"
-							defaultValue="용접자2"
+							defaultValue="사진사1"
 							variant="standard"
 							size="small"
 							hiddenLabel

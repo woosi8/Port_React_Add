@@ -61,7 +61,7 @@ const Imgupload2 = () => {
 	return (
 		<Container>
 			<StyledTitle fontWeight={550} variant="subtitle1">
-				용접 작업이 완료된 사진과 비표를 업로드 해주세요.
+				업로드된 사진을 확인해주세요.
 			</StyledTitle>
 			<MultiImg2 />
 			{/* 

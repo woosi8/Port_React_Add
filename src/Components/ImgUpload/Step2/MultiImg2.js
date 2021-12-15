@@ -10,6 +10,10 @@ import weld1 from "../weld1.jpg";
 import weld2 from "../weld2.jpg";
 import SwipeableViews from "react-swipeable-views";
 import MultiImgError from "./MultiImgError";
+import animal from "Assets/Images/animal.jpg";
+import elk from "Assets/Images/elk.jpg";
+import cat from "Assets/Images/cat.jpg";
+import squ from "Assets/Images/squireel.jpg";
 
 const StyledTitle = styled(Typography)(({ theme }) => ({
 	textAlign: "center",
@@ -54,7 +58,7 @@ const MultiImg2 = () => {
 
 	return (
 		<Box sx={{ width: "100%", typography: "body1" }}>
-			<Typography>용접사진(4장)</Typography>
+			<Typography>동물사진(4장)</Typography>
 			<Box sx={{ borderBottom: 1, borderColor: "divider" }}>
 				<Tabs value={index} onChange={handleChange} variant="fullWidth">
 					<Tab label="0°" />
@@ -71,19 +75,19 @@ const MultiImg2 = () => {
 				// interval={2500}
 			>
 				<StyledTabBox>
-					<StyledBox component="img" src={weld} alt="용접사진" />
+					<StyledBox component="img" src={squ} alt="용접사진" />
 					{!success ? <MultiImgError /> : null}
 				</StyledTabBox>
 				<StyledTabBox>
-					<StyledBox component="img" src={weld1} alt="용접사진" />
+					<StyledBox component="img" src={cat} alt="용접사진" />
 					{success ? <MultiImgError /> : null}
 				</StyledTabBox>
 				<StyledTabBox>
-					<StyledBox component="img" src={weld1} alt="용접사진" />
+					<StyledBox component="img" src={animal} alt="용접사진" />
 					{!success ? <MultiImgError /> : null}
 				</StyledTabBox>
 				<StyledTabBox>
-					<StyledBox component="img" src={weld2} alt="용접사진" />
+					<StyledBox component="img" src={elk} alt="용접사진" />
 					{success ? <MultiImgError /> : null}
 				</StyledTabBox>
 			</SwipeableViews>
