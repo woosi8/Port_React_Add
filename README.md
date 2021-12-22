@@ -7,7 +7,8 @@
 #### 테이블에 들어간 회원 정보를 Create, 생성된 회원들을 검색 및 선택 하여 다수 삭제 기능 및 전체 삭제 가능 하도록 구현, 회원별 Edit 페이지를 구성하여 회원의 정보를 수정 가능 하도록 구현 (CRUD 가능하도록 구성 *CRUD CODE 버튼 클릭시 소스코드로 이동 가능) 
 
 ## - Annotorious 이미지 태그 컴포넌트
-#### Recogito Annotorious 라이브러리를 사용하여 node_modules 의 package를 수정하여 원하는 기능들을 갖추도록 구현. (package 수정으로 인해 patches 기능을 사용함) patches : 수정한 사항들을 저장해 놓고 npm install 시 자동으로 수정사항을 반영할 수 있도록 해주는 기능)
+#### Recogito Annotorious 라이브러리를 사용하여 node_modules 의 package를 수정하여 원하는 기능들을 갖추도록 구현.
+#### (package 수정으로 인해 patches 기능을 사용함) patches : 수정한 사항들을 저장해 놓고 npm install 시 자동으로 수정사항을 반영할 수 있도록 해주는 기능)
 #### 수정한 사항 :
 - 원하는 위치에 태그를 표시하고 완료와 동시에 선택 가능한 라벨(4가지)을 띄어주어 선택하여 완성 되도록 수정. 
 - 라벨 선택에 따라 고유의 색상을 가지도록 하는 기능 추가함.
